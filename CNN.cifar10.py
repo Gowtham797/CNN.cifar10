@@ -12,6 +12,8 @@ from tensorflow.keras import datasets,layers,models
 import numpy as np
 import matplotlib.pyplot as plt
 
+tf.__version__
+
 (X_train,y_train),(X_test,y_test)=datasets.cifar10.load_data()
 X_train.shape
 
@@ -88,4 +90,3 @@ plot_sample(X_test,y_test,3)
 
 classes[y_classes[3]]
 
-tf.__version__
